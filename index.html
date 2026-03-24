@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus AI</title>
+    <!-- Modern Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Ionicons for premium modern icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <!-- Header Section -->
+        <header class="chat-header">
+            <div class="logo">
+                <ion-icon name="sparkles"></ion-icon>
+                <span>Nexus AI</span>
+            </div>
+            <div class="header-actions">
+                <button id="clear-chat" title="Clear Chat History">
+                    <ion-icon name="trash-outline"></ion-icon>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container" id="chat-container">
+            <!-- Initial Welcome Message -->
+            <div class="message bot-message intro">
+                <div class="avatar"><ion-icon name="planet"></ion-icon></div>
+                <div class="message-content">
+                    <p>Hello! I'm Nexus, your conversational AI and image generation assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <!-- Dynamic Messages will be injected here via JavaScript -->
+        </main>
+
+        <!-- Input Section -->
+        <footer class="input-container">
+            <div class="input-wrapper" id="input-wrapper">
+                <!-- Toggle Button for Image Generation -->
+                <button id="camera-btn" title="Toggle Image Generation Mode">
+                    <ion-icon name="image-outline"></ion-icon>
+                </button>
+                
+                <!-- Textarea for User Input -->
+                <textarea id="user-input" placeholder="Message Nexus AI..." rows="1" autofocus></textarea>
+                
+                <!-- Send Button (Up Arrow for modern SaaS design) -->
+                <button id="send-btn" title="Send Message" class="send-btn">
+                    <ion-icon name="arrow-up-outline"></ion-icon>
+                </button>
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-- Application Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
